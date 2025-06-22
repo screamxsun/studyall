@@ -14,7 +14,7 @@ public class Application {
         StringRedisTemplate stringRedisTemplate = run.getBean(StringRedisTemplate.class);
         stringRedisTemplate.opsForValue().set("test", "test");
         System.out.println(stringRedisTemplate.opsForValue().get("test"));
-
+        System.out.println();
     }
 
 }
